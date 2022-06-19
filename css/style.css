@@ -1,0 +1,88 @@
+/* Início do Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Final do Reset*/
+
+/* Início das Cores */
+:root {
+    --Branco: #fff;
+    --Azul: #00a3b4;
+}
+/* Final das Cores */
+
+/* Início do Menu */
+a {
+    color: var(--Branco);
+    text-decoration: none;
+    transition: 0.3;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: var(--Azul);
+    height: 12vh;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    margin-left: 35px;
+}
+
+li > i {
+    color: var(--Branco);
+}
+
+.boxSearch {
+    display: flex;
+    justify-content: space-evenly;
+    width: 350px;
+    height: 35px; 
+    border-radius: 25px;
+    font-size: 20px;
+    position: relative;
+} 
+
+.search {
+    border: none; 
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+} 
+
+input.search {
+    border-radius: 5px;
+    outline: none;
+} 
+
+.fa-magnifying-glass {
+    position: absolute;
+    margin-left: 90%;
+    transform: translateY(40%);
+    cursor: pointer;
+    color: orangered;
+}
+
+.fa-user,
+.fa-cart-shopping {
+    margin-right: 5px;
+}
+/* Final do Menu */
