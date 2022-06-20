@@ -35,6 +35,7 @@ nav {
     background: var(--Azul);
     height: 12vh;
     align-items: center;
+    width: 100%;
 }
 
 .nav-list {
@@ -86,3 +87,34 @@ input.search {
     margin-right: 5px;
 }
 /* Final do Menu */
+
+/* Inicio da section do video */
+.fundo-video {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundo-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;  
+    z-index: 2;  
+    user-select: none;
+    mix-blend-mode: screen;
+}
+/* Fim da section do video */
