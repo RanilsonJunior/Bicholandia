@@ -1,6 +1,6 @@
-// function teste() {
-//     alert('O icone de search foi clicado!')
-// }
+function teste() {
+    alert('O icone de search foi clicado!')
+}
 
 // Script do SlidShow
 var balls = document.querySelector('.balls');
@@ -59,3 +59,16 @@ setInterval(()=>{
         rolar = true
     }
 },5000)
+// --------------------------------------------------------
+
+/*Código para subir ao topo da página*/ 
+const toTop = document.querySelector('.subir');
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 100) { /*tamanho da página, quando chegar em 100 vai aparecer*/
+        toTop.classList.add('active');
+    } else {
+        toTop.classList.remove('active');
+    }
+})
+// -----------------------------------------------------------
