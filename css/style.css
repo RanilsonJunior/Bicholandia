@@ -103,7 +103,6 @@ input.search {
 
 /* Inicio da section do video */
 .fundo-video {
-    border: 1px solid rebeccapurple;
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -135,10 +134,7 @@ input.search {
 
 /* Início do SlideShow */
  .main-slide {
-    border: 1px solid rebeccapurple;
-
     position: relative;
-    /* margin-top: 30px; */
     width: 100%;
     height: 70vh;
     display: flex;
