@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicholândia - Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> <!-- CDN Font Awesome -->
+    <link rel="shortcut icon" href="/Iconcreme-Halloween-Cat.ico" type="image/x-icon"> <!--ICO -->
+    <link rel="stylesheet" href="/css/login-style.css"> <!-- Arquivo css -->
+</head>
+<body>
+    <nav>
+        <a href="/index.html" class="logo">Bicholândia</a>
+        <ul class="nav-list">    
+            <li><i class="fa-solid fa-lock"></i>Ambiente Seguro</li>
+        </ul>
+    </nav>
+
+    <form>
+        <div class="inputBox">
+            <input id="nome" type="text" required>
+            <span>Nome</span>
+        </div>
+        <div class="inputBox">
+            <input id="email" type="text" required>
+            <span>E-mail</span>
+        </div>
+        <div class="inputBox">
+            <input id="senha" type="text" required>
+            <span>Senha</span>
+        </div>
+        <div class="inputBox">
+            <input id="confirmarSenha" type="text" required>
+            <span>Confirmar Senha</span>
+        </div>
+        <button type="submit" id="btn" onclick="enviar()">Criar conta</button>
+    </form>
+
+    <script src="/javascript/login.js"></script>
+</body>
+</html>
