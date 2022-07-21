@@ -125,6 +125,7 @@ main {
     font-size: 1.2rem;
     border: none;
 }
+
 #btn:active {
     transform: scale(0.95);
 }

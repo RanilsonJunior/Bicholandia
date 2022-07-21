@@ -16,21 +16,22 @@
             <li><i class="fa-solid fa-lock"></i>Ambiente Seguro</li>
         </ul>
     </nav>
+    
     <main>
         <div class="inputBox">
-            <input id="nome" type="text">
+            <input id="nome" type="text" required="required">
             <span>Nome</span>
         </div>
         <div class="inputBox">
-            <input id="email" type="text">
+            <input id="email" type="text" required="required">
             <span>E-mail</span>
         </div>
         <div class="inputBox">
-            <input id="senha" type="text">
+            <input id="senha" type="text" required="required">
             <span>Senha</span>
         </div>
         <div class="inputBox">
-            <input id="confirmarSenha" type="text">
+            <input id="confirmarSenha" type="text" required="required">
             <span>Confirmar Senha</span>
         </div>
         <button type="submit" id="btn" onclick="cadastrar()">Criar conta</button>
@@ -39,13 +40,13 @@
     <div class="modal-container">
         <div class="modal">
             <div class="top-modal">
-                <h2 class="titulo">Titulo</h2> <i class="fa-solid fa-xmark" onclick="fecharModal()"></i>
+                <h2 class="titulo"></h2> <i class="fa-solid fa-xmark" onclick="fecharModal()"></i>
             </div>
             <div class="linha"></div>
-            <span class="descricao">Aqui vai está escrito os comentarios.</span>
+            <span class="descricao"></span>
             <div class="linha"></div>
             <div class="btn">
-                <button class="btnClose" type="submit" onclick="fecharModal()" >Fechar</button>
+                <button class="btnClose" type="submit" onclick="fecharModal()"></button>
             </div>
         </div>
     </div>
