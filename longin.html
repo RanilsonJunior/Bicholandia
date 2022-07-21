@@ -16,27 +16,39 @@
             <li><i class="fa-solid fa-lock"></i>Ambiente Seguro</li>
         </ul>
     </nav>
-
-    <form>
+    <main>
         <div class="inputBox">
-            <input id="nome" type="text" required>
+            <input id="nome" type="text">
             <span>Nome</span>
         </div>
         <div class="inputBox">
-            <input id="email" type="text" required>
+            <input id="email" type="text">
             <span>E-mail</span>
         </div>
         <div class="inputBox">
-            <input id="senha" type="text" required>
+            <input id="senha" type="text">
             <span>Senha</span>
         </div>
         <div class="inputBox">
-            <input id="confirmarSenha" type="text" required>
+            <input id="confirmarSenha" type="text">
             <span>Confirmar Senha</span>
         </div>
-        <button type="submit" id="btn" onclick="enviar()">Criar conta</button>
-    </form>
+        <button type="submit" id="btn" onclick="cadastrar()">Criar conta</button>
+    </main>
 
+    <div class="modal-container">
+        <div class="modal">
+            <div class="top-modal">
+                <h2 class="titulo">Titulo</h2> <i class="fa-solid fa-xmark" onclick="fecharModal()"></i>
+            </div>
+            <div class="linha"></div>
+            <span class="descricao">Aqui vai está escrito os comentarios.</span>
+            <div class="linha"></div>
+            <div class="btn">
+                <button class="btnClose" type="submit" onclick="fecharModal()" >Fechar</button>
+            </div>
+        </div>
+    </div>
     <script src="/javascript/login.js"></script>
 </body>
 </html>
