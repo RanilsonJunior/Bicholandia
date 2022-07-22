@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap');
 /* Início do Reset*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
 }
 /* Final do Reset*/
 
@@ -43,7 +45,7 @@ nav {
     left: 0;
     display: flex;
     justify-content: space-evenly;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     background: var(--Azul);
     height: 12vh;
     align-items: center;
@@ -153,7 +155,7 @@ input.search {
 
 .slides {
     width: 6000px; /* tamanho de todas as imagens juntas */
-     display: flex;
+    display: flex;
 }
 
 .image img {
@@ -221,6 +223,19 @@ input.search {
 /* Final do SlideShow */
 
 /* Início de Produtos */
+main > h3 {
+    margin: 2rem 2rem 0rem 2rem;
+    font-size: 2rem;
+}
+
+.linha {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    border: .2rem solid var(--Azul);
+    width: 200px;
+    border-radius: 1rem;
+}
+
 .slider {
     background-color: var(--bg);
     padding: 1rem;
@@ -247,7 +262,7 @@ input.search {
     border: .1rem solid var(--secondary);
     transform: scale(1.05);
 }
- /*circulo*/
+/*circulo*/
 .card::before, .card::after {
     position: absolute;
     content: '';
@@ -360,34 +375,24 @@ input.search {
 .botao-add {
     border: .1rem solid var(--secondary);
 }
-main > h3 {
-    margin: 2rem;
-    font-size: 2rem;
-}
+
 /* Fim de Produtos */
 
 /* Início do Slide Logo */
-.orb {
+.img-logo {
     width: 100px;
     height: 100px;
     display: inline-block;
-    margin: 0 24.7px;
+    margin: 0 30px;
     transition: all .2s ease-out;
 
-}.orb:hover {
+}.img-logo:hover {
     transform: scale(1.2);
     opacity: .5;
     cursor: pointer;
 }
 
-.red {background:red;}
-.yellow {background:yellow;}
-.blue {background:blue;}
-.orange {background:orange;}
-.purple {background:purple;}
-.green {background:green;}
-
-.marquee {
+.logo-container-main {
     display: flex;
     align-items: center;
     height: 20rem;
@@ -398,15 +403,15 @@ main > h3 {
     margin: 0 auto;
 }
 
-.marquee--inner {
+.logo-container {
     display: block;
     width: 200%;
     margin: 70px 0;
     position: absolute;
-    animation: marquee 20s linear infinite;
+    animation: movimentacao 55s linear infinite;
 }
 
-.marquee--inner:hover {
+.logo-container:hover {
     animation-play-state: paused;
 }
 
@@ -415,7 +420,7 @@ span {
     width: 50%;
 }
 
-@keyframes marquee {
+@keyframes movimentacao {
     0% { left: 0; }
     100% { left: -100%; }
 }
