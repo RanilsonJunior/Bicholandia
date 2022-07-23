@@ -72,3 +72,13 @@ window.addEventListener('scroll', () => {
     }
 })
 // -----------------------------------------------------------
+
+function abrir() {
+    let menu2Nunero1 = document.querySelector('.menu2-numero1')
+    menu2Nunero1.classList.toggle('ativo')
+}
+
+function acessibilidade() {
+    let acessibilidade = document.querySelector('.acessibilidade')
+    acessibilidade.classList.toggle('ativo')
+}

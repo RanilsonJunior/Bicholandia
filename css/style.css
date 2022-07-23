@@ -24,7 +24,7 @@ html {
 }
 /* Final das Cores */
 
-/* Início do Menu */
+/* Início do Menu1 */
 a {
     color: var(--Branco);
     text-decoration: none;
@@ -39,13 +39,12 @@ a:hover {
     font-size: 24px;
 }
 
-nav {
+.menu1 {
     position: fixed;
     top: 0;
     left: 0;
     display: flex;
     justify-content: space-evenly;
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     background: var(--Azul);
     height: 12vh;
     align-items: center;
@@ -101,10 +100,89 @@ input.search {
 .fa-cart-shopping {
     margin-right: 5px;
 }
-/* Final do Menu */
+/* Final do Menu1 */
+
+/* Inicio do menu2*/
+.menu2 {
+    position: fixed;
+    top: 12vh;
+    z-index: 700;
+    width: 100%;
+    height: 8vh;
+    background-color: #0595a6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}  
+
+.btn-menu2-numero1 {
+    z-index: 700;
+    cursor: pointer;
+    margin-left: 100px;
+}
+
+.btn-menu2-numero1 div{
+    border-radius: 10px;
+    width: 32px;
+    height: 4px;
+    background: var(--Branco);
+    margin: 8px;
+    
+}
+
+.menu2-numero1 {
+    position: absolute;
+    top: 8vh; /*para cobrir o btn-menu2o colocar 0*/
+    left: 3vw;
+    height: 52vh;
+    width: 10vw;
+    background-color: #061d4e;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    color: var(--Branco);
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu2-numero1.ativo {
+    display: flex;
+}
+
+.acessibilidade {
+    position: absolute;
+    top: 8vh; /*para cobrir o btn-menu2o colocar 0*/
+    left: 80vw;
+    height: 52vh;
+    width: 15vw;
+    background-color: #555 ;
+    border-radius: 10px;
+    color: var(--Branco);
+    display: none;
+}
+
+.acessibilidade.ativo {
+    display: flex;
+}
+
+.btn-acessibilidade {
+    cursor: pointer;
+}
+
+.btn-acessibilidade span {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.fa-gear {
+    margin-left: 50px;
+    font-size: 1.5rem;
+}
+/* Final do Menu2 */
 
 /* Inicio da section do video */
 .fundo-video {
+    margin-top: 20vh;
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -135,7 +213,7 @@ input.search {
 /* Fim da section do video */
 
 /* Início do SlideShow */
- .main-slide {
+.main-slide {
     position: relative;
     width: 100%;
     height: 70vh;
