@@ -48,7 +48,14 @@
                 <i class="fa-solid fa-gear"></i>
             </div>
             <div class="acessibilidade">
-                <span>oi</span>
+                <div class="acessibilidade-font">
+                    <button class="btn-font" type="submit" onclick="jetBrainsMono()">Default</button>
+                    <button class="btn-font" type="submit" onclick="openDyslexic()">Dyslexic</button>
+                    <button class="btn-font" type="submit" onclick="tahoma()">Tahoma</button>
+                </div>
+                <div class="range-font">
+                    <span class="a-menor">A-</span><input type="range" class="range1"  min="16" max="28" value="16"><span class="a-maior">A+</span>
+                </div>
             </div>
         </nav>
         <!-- Final do Menu2 -->
@@ -273,7 +280,7 @@
         </div>
 
         <!-- Início do Footer -->
-        <footer>
+        <footer class="fontModification">
             <div class="sobre">
                 <h3>Sobre a Bicholândia</h3>
                 <a href="#">Quem somos</a>

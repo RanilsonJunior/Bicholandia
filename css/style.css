@@ -1,16 +1,28 @@
+/* Inicio da font via Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap');
+/* Final da font via Google Fonts */
+
 /* Início do Reset*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'JetBrains Mono', monospace;
+
 }
 /* Final do Reset*/
 
-html {
-    scroll-behavior: smooth; /*para subir suavemente*/
+/* Inicio da font Open Dyslexic */
+@font-face {
+    font-family: OpenDyslexic-Regular;
+    src: url(/font/OpenDyslexic-Regular.otf);
 }
+/* Final da font Open Dyslexic */
+
+/* Inicio para subir o botão suavemente */
+html {
+    scroll-behavior: smooth;
+}
+/* Final para subir o botão suavemente */
 
 /* Início das Cores */
 :root {
@@ -175,16 +187,19 @@ input.search {
     display: flex;
 }
 
-.acessibilidade {
+.acessibilidade  {
     position: absolute;
-    top: 8vh; /*para cobrir o btn-menu2o colocar 0*/
-    left: 80vw;
-    height: 52vh;
-    width: 15vw;
-    background-color: #555 ;
-    border-radius: 10px;
+    top: 9vh; /*para cobrir o btn-menu2o colocar 0*/
+    left: 72vw;
+    height: 30vh;
+    width: 25vw;
+    background-color: #121212 ;
     color: var(--Branco);
     display: none;
+    border: 2px solid #000000;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .acessibilidade.ativo {
@@ -192,13 +207,45 @@ input.search {
 }
 
 .btn-acessibilidade {
-
+    margin-right: 100px;
     cursor: pointer;
 }
 
-.btn-acessibilidade.ativo .fa-gear{
-    transform: rotate(360deg);
-    transition-delay: 2s;
+button.btn-font {
+    width: 80px;
+    color: #b3b4bf;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(115,103,240,.1);
+    padding: 0.3rem 0.2rem;
+    font-size: .85rem;
+    margin: 20px 5px 20px 5px;
+    align-items: flex-start;
+}
+
+button.btn-font:hover {
+    background-color: #8176f2;
+    color: #fff;
+}
+
+.range-font {
+    width: 280px;
+    display: flex;
+}
+
+input.range1 {
+    width: 260px;
+}
+
+.a-menor {
+    width: 30px;
+    color: #b3b4bf;
+    font-size: 20px;
+}
+.a-maior {
+    width: 40px;
+    color: #b3b4bf;
+    font-size: 20px;
 }
 
 .btn-acessibilidade span {
@@ -352,7 +399,7 @@ main > h3 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
-    font: normal 1rem sans-serif;
+    font-size: 1rem;
 }
 
 .card {
@@ -373,7 +420,7 @@ main > h3 {
     transform: scale(1.05);
 }
 /*circulo*/
-.card::before, .card::after {
+/* .card::before, .card::after {
     position: absolute;
     content: '';
     background-color: var(--secondary);
@@ -402,7 +449,7 @@ main > h3 {
 
 .card:hover::after { 
     transform: scale(0);
-}
+} */
 /*circulo*/
 
 .card-content {
@@ -465,7 +512,7 @@ main > h3 {
 }
 
 .card-price {
-    font: bolder 1.5rem sans-serif;
+    font-size: 1.5rem;
 }
 
 .botao {
