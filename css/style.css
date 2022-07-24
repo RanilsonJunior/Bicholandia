@@ -211,6 +211,16 @@ input.search {
     cursor: pointer;
 }
 
+.btn-acessibilidade span {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.fa-gear {
+    margin-left: 50px;
+    font-size: 1.5rem;
+}
+
 button.btn-font {
     width: 80px;
     color: #b3b4bf;
@@ -248,15 +258,6 @@ input.range1 {
     font-size: 20px;
 }
 
-.btn-acessibilidade span {
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-
-.fa-gear {
-    margin-left: 50px;
-    font-size: 1.5rem;
-}
 /* Final do Menu2 */
 
 /* Inicio da section do video */
