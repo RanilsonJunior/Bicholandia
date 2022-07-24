@@ -74,7 +74,9 @@ window.addEventListener('scroll', () => {
 // -----------------------------------------------------------
 
 function abrir() {
+    let btnMenu2numero1 = document.querySelector('.btn-menu2-numero1')
     let menu2Nunero1 = document.querySelector('.menu2-numero1')
+    btnMenu2numero1.classList.toggle('ativo')
     menu2Nunero1.classList.toggle('ativo')
 }
 
