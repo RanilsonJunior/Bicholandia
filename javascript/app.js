@@ -1,3 +1,5 @@
+"use strict";
+
 function teste() {
     alert('O icone de search foi clicado!')
 }
@@ -108,7 +110,6 @@ function openDyslexic() {
 const range = document.querySelector('.range1');
 const fontModification = document.querySelector('.fontModification');
 range.addEventListener('input', function() {
-    console.log('entrou');
     const rangeValue = range.value;
     fontModification.style.fontSize = rangeValue + 'px';
 })

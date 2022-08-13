@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicholândia - Produto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> <!-- CDN Font Awesome -->
+    <link rel="shortcut icon" href="/Iconcreme-Halloween-Cat.ico" type="image/x-icon"> <!--ICO -->
+    <link rel="stylesheet" href="/css/produto-style.css"> <!-- Arquivo css -->
+</head>
+<body>
+    <!-- Início do Menu1 -->
+    <nav class="menu1">
+        <a href="/index.html" class="logo">Bicholândia</a>
+        <ul class="nav-list">
+            <div class="boxSearch">
+                <input class="search" type="search">
+                <i class="fa-solid fa-magnifying-glass"  onclick="teste()"></i>
+            </div>
+            <li><a href="/login.html"><i class="fa-solid fa-user"></i>Entre ou Cadastre-se</a></li>
+            <li><a href="#"><i class="fa-solid fa-cart-shopping"></i>Carrinho</a></li>
+        </ul>
+    </nav>
+    <!-- Final do Menu1 -->
+
+    <!-- Início do Menu2 -->
+    <nav class="menu2">
+        <div class="btn-menu2-numero1" onclick="abrir()">
+            <div class="linha1"></div>
+            <div class="linha2"></div>
+            <div class="linha3"></div>
+        </div>
+        <div class="menu2-numero1">
+            <span class="cachorro">Cachorro</span>
+            <span class="gato">Gato</span>
+            <span class="papagaio">Papagaio</span>
+            <li><a href="/produto.html">Produtos</a></li>
+        </div>
+
+
+        <div class="btn-acessibilidade" onclick="acessibilidade()">
+            <span>Acessibilidade</span>
+            <i class="fa-solid fa-gear"></i>
+        </div>
+        <div class="acessibilidade">
+            <div class="acessibilidade-font">
+                <button class="btn-font" type="submit" onclick="jetBrainsMono()">Default</button>
+                <button class="btn-font" type="submit" onclick="openDyslexic()">Dyslexic</button>
+                <button class="btn-font" type="submit" onclick="tahoma()">Tahoma</button>
+            </div>
+            <div class="range-font">
+                <span class="a-menor">A-</span><input type="range" class="range1"  min="16" max="28" value="16"><span class="a-maior">A+</span>
+            </div>
+        </div>
+    </nav>
+    <!-- Final do Menu2 -->
+<script src="/javascript/produto.js"></script>    
+</body>
+</html>
