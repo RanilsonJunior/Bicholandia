@@ -49,7 +49,7 @@ a:hover {
 }
 
 .logo {
-    color: var(--Branco);  /* esse aqui */
+    color: var(--Branco);
     font-size: 24px;
 }
 
@@ -117,7 +117,7 @@ input.search {
 .fa-user,
 .fa-cart-shopping {
     margin-right: 5px;
-    color: var(--Branco);  /* esse aqui */
+    color: var(--Branco);
 }
 /* Final do Menu1 */
 
@@ -178,16 +178,16 @@ input.search {
 
 .menu2-numero1 {
     position: absolute;
-    top: 9vh; /*para cobrir o btn-menu2o colocar 0*/
+    top: 8vh; /*para cobrir o btn-menu2o colocar 0*/
     left: 3vw;
     height: 52vh;
     width: 10vw;
     background-color: #061d4e;
-    border-bottom-left-radius: 10px;
+    border-radius: 10px;
     display: none;
     flex-direction: column;
-    color: #000;
-    justify-content: space-evenly;
+    color: var(--Branco);
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -270,144 +270,16 @@ input.range1 {
     font-size: 20px;
 }
 
-.menu2-cachorro {
-    position: absolute;
-    top: 9vh; 
-    left: 13vw;
-    height: 52vh;
-    width: 25vw;
-    background-color: #061d4e;
-    color: var(--Branco);
-    display: none;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-}
-
-.menu2-cachorro li a {
-    color: var(--Branco);
-}
-
-.menu2-cachorro.ativo {
-    display: flex;
-}
-
-.cachorro {
-    margin-left: 6px;
-}
-
-.cachorro .fa-angle-right {
-    padding-left: 30px;
-    padding-right: 5px;
-}
-
-.menu2-gato {
-    position: absolute;
-    top: 9vh; /*para cobrir o btn-menu2o colocar 0*/
-    left: 13vw;
-    height: 52vh;
-    width: 25vw;
-    background-color: #061d4e;
-    color: var(--Branco);
-    display: none;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-}
-
-.menu2-gato li a {
-    color: var(--Branco);
-}
-
-.menu2-gato.ativo {
-    display: flex;
-}
-
-.gato {
-    margin-left: 6px;
-}
-
-.gato .fa-angle-right {
-    padding-left: 59px;
-    padding-right: 5px;
-}
-
-.menu2-coelho {
-    position: absolute;
-    top: 9vh; /*para cobrir o btn-menu2o colocar 0*/
-    left: 13vw;
-    height: 52vh;
-    width: 25vw;
-    background-color: #061d4e;
-    color: var(--Branco);
-    display: none;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-}
-
-.menu2-coelho li a {
-    color: var(--Branco);
-}
-
-.menu2-coelho.ativo {
-    display: flex;
-}
-
-.coelho {
-    margin-left: 6px;
-}
-
-.coelho .fa-angle-right {
-    padding-left: 40px;
-    padding-right: 4px;
-}
-
-.menu2-brinquedo {
-    position: absolute;
-    top: 9vh; /*para cobrir o btn-menu2o colocar 0*/
-    left: 13vw;
-    height: 52vh;
-    width: 25vw;
-    background-color: #061d4e;
-    color: var(--Branco);
-    display: none;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-}
-
-.menu2-brinquedo li a {
-    color: var(--Branco);
-}
-
-.menu2-brinquedo.ativo {
-    display: flex;
-}
-
-.brinquedo {
-    margin-left: 6px;
-    padding-right: 5px;
-}
-
-.brinquedo .fa-angle-right {
-    padding-left: 12px;
-}
-
 /* Final do Menu2 */
 
 /* tirar isso daqui Inicio do caminho do produto */
 
-.caminho {
+.embaixo-do-menu {
+    text-align: center;
+    font-size: 3rem;
     margin-top: 26vh; /*  Para ficar embaixo do menu*/
-    margin-left: 3vw;
+
 }
 
-.caminho a {
-    color: #000;
-}
-.caminho a:hover {
-    text-decoration: solid;
-}
 
 /* Final do caminho do produto */

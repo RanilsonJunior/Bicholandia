@@ -38,7 +38,6 @@ a:hover {
 nav {
     display: flex;
     justify-content: space-between;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background: var(--Azul);
     height: 12vh;
     align-items: center;

@@ -7,9 +7,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    list-style: none;
 }
 /* Final do Reset*/
+
+/* Inicio do body */
+body {
+    font-family: 'JetBrains Mono', monospace;
+}
+/* Final do body */
 
 /* Inicio da font Open Dyslexic */
 @font-face {
@@ -170,17 +176,21 @@ input.search {
 
 .menu2-numero1 {
     position: absolute;
-    top: 8vh; /*para cobrir o btn-menu2o colocar 0*/
+    top: 9vh; /*para cobrir o btn-menu2o colocar 0*/
     left: 3vw;
     height: 52vh;
     width: 10vw;
     background-color: #061d4e;
-    border-radius: 10px;
+    border-bottom-left-radius: 10px;
     display: none;
     flex-direction: column;
-    color: var(--Branco);
-    justify-content: space-around;
+    color: #000;
+    justify-content: space-evenly;
     align-items: center;
+}
+
+.menu2-numero1 li a {
+    color: var(--Branco);
 }
 
 .menu2-numero1.ativo {
@@ -258,11 +268,119 @@ input.range1 {
     font-size: 20px;
 }
 
+ .menu2-cachorro {
+    position: absolute;
+    top: 9vh; 
+    left: 13vw;
+    height: 52vh;
+    width: 25vw;
+    background-color: #061d4e;
+    color: var(--Branco);
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.menu2-cachorro.ativo {
+    display: flex;
+}
+
+.cachorro {
+    margin-left: 6px;
+}
+
+.cachorro .fa-angle-right {
+    padding-left: 30px;
+    padding-right: 5px;
+}
+
+.menu2-gato {
+    position: absolute;
+    top: 9vh; /*para cobrir o btn-menu2o colocar 0*/
+    left: 13vw;
+    height: 52vh;
+    width: 25vw;
+    background-color: #061d4e;
+    color: var(--Branco);
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.menu2-gato.ativo {
+    display: flex;
+}
+
+.gato {
+    margin-left: 6px;
+}
+
+.gato .fa-angle-right {
+    padding-left: 59px;
+    padding-right: 5px;
+}
+
+.menu2-coelho {
+    position: absolute;
+    top: 9vh; /*para cobrir o btn-menu2o colocar 0*/
+    left: 13vw;
+    height: 52vh;
+    width: 25vw;
+    background-color: #061d4e;
+    color: var(--Branco);
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.menu2-coelho.ativo {
+    display: flex;
+}
+
+.coelho {
+    margin-left: 6px;
+}
+
+.coelho .fa-angle-right {
+    padding-left: 40px;
+    padding-right: 4px;
+}
+
+.menu2-brinquedo {
+    position: absolute;
+    top: 9vh; /*para cobrir o btn-menu2o colocar 0*/
+    left: 13vw;
+    height: 52vh;
+    width: 25vw;
+    background-color: #061d4e;
+    color: var(--Branco);
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.menu2-brinquedo.ativo {
+    display: flex;
+}
+
+.brinquedo {
+    margin-left: 6px;
+    padding-right: 5px;
+}
+
+.brinquedo .fa-angle-right {
+    padding-left: 12px;
+}
+
 /* Final do Menu2 */
 
 /* Inicio da section do video */
 .fundo-video {
-    margin-top: 20vh;
+    margin-top: 20vh; /* Para ficar embaixo do menu */
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -541,7 +659,7 @@ main > h3 {
     width: 100px;
     height: 100px;
     display: inline-block;
-    margin: 0 25px;
+    margin: 0 30px;
     transition: all .2s ease-out;
 
 }.img-logo:hover {
