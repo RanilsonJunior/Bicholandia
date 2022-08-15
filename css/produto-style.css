@@ -1,28 +1,29 @@
 /* Inicio da font via Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 /* Final da font via Google Fonts */
-
-/* Início do Reset*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-}
-/* Final do Reset*/
-
-/* Inicio do body */
-body {
-    font-family: 'JetBrains Mono', monospace;
-}
-/* Final do body */
-
 /* Inicio da font Open Dyslexic */
 @font-face {
     font-family: OpenDyslexic-Regular;
     src: url(/font/OpenDyslexic-Regular.otf);
 }
 /* Final da font Open Dyslexic */
+
+/* Início do Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* Final do Reset*/
+
+/* Inicio do body */
+body {
+    font-family: 'Nunito', sans-serif;
+    list-style: none;
+}
+/* Final do body */
 
 /* Inicio para subir o botão suavemente */
 html {
@@ -35,6 +36,7 @@ html {
     --Branco: #fff;
     --Azul: #00a3b4;
     --orangered: #ff4500;
+    --gold: #ffd700;
 }
 /* Final das Cores */
 
@@ -396,7 +398,7 @@ input.range1 {
 
 /* Final do Menu2 */
 
-/* tirar isso daqui Inicio do caminho do produto */
+/*Inicio do caminho do produto */
 
 .caminho {
     margin-top: 26vh; /*  Para ficar embaixo do menu*/
@@ -406,23 +408,14 @@ input.range1 {
 .caminho a {
     color: #000;
 }
-.caminho a:hover {
-    text-decoration: solid;
-}
 
 /* Final do caminho do produto */
 
-#content-wrapper{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-}
-
+/* Inicio do slide do produto */
 .column{
 	width: 600px;
 	padding: 10px;
-
+    border: 1px solid red;
 }
 
 #featured{
@@ -430,8 +423,6 @@ input.range1 {
 	max-height: 600px;
 	object-fit: cover;
 	cursor: pointer;
-	/* border: 2px solid black; */ /* Caso queira colocar borda na imagen principal. */
-
 }
 
 .thumbnail{
@@ -464,7 +455,6 @@ input.range1 {
 	display: flex;
 	flex-wrap: nowrap;
 	overflow-x: hidden; /* Caso queira colocar um scroll em baixo das imagens. */
-
 }
 
 .arrow{
@@ -479,3 +469,58 @@ input.range1 {
 	width: 35px;
 	height: 35px;
 }
+/* Final do slide do produto */
+
+/* Inicio da informação do produto */
+
+.container-information {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    border: 1px solid red;
+}
+
+.name-product {
+    margin: 10px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.06rem;
+    line-height: 1.8rem;
+}
+
+.code {
+    font-size: .9rem;
+    margin: 5px 10px;
+    color: #555555;
+}
+
+.number-star {
+    font-weight: 900;
+}
+
+.container-star {
+    margin: 15px 10px;
+}
+
+.star {
+    margin-left: 10px;
+    color: var(--gold);
+    font-size: 1.7rem;
+}
+
+.opinion {
+    color: #555555;
+    margin-left: 10px;
+    font-size: .9rem;
+}
+
+.container-information > span {
+    margin: 12px 10px;
+    font-weight: 900;
+}
+
+.container-information > ul {
+    color: #555555;
+    margin-left: 28px;
+}
+/* Final da informação do produto */
