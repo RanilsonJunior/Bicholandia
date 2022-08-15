@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 /* Inicio do Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'JetBrains Mono', monospace;
 }
 /* Final do Reset*/
+
+bosy {
+    font-family: 'Nunito', sans-serif;
+}
 
 /* Início das Cores */
 :root {

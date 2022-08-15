@@ -89,10 +89,10 @@ function acessibilidade() {
 
 //------------------------------------------------------------
 
-// change font family JetBrains Mono for button
+// change font family Nunito Sans-Serif for button
 function jetBrainsMono() {
     let body = document.querySelector('body');
-    body.style.fontFamily = 'JetBrains Mono';
+    body.style.fontFamily = 'Nunito', sans-serif;
 }
 
 // change font family Tahoma for button

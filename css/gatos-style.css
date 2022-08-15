@@ -1,6 +1,15 @@
 /* Inicio da font via Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 /* Final da font via Google Fonts */
+
+/* Inicio da font Open Dyslexic */
+@font-face {
+    font-family: OpenDyslexic-Regular;
+    src: url(/font/OpenDyslexic-Regular.otf);
+}
+/* Final da font Open Dyslexic */
+
 
 /* Início do Reset*/
 * {
@@ -13,16 +22,9 @@
 
 /* Inicio do body */
 body {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Nunito', sans-serif;
 }
 /* Final do body */
-
-/* Inicio da font Open Dyslexic */
-@font-face {
-    font-family: OpenDyslexic-Regular;
-    src: url(/font/OpenDyslexic-Regular.otf);
-}
-/* Final da font Open Dyslexic */
 
 /* Inicio para subir o botão suavemente */
 html {
