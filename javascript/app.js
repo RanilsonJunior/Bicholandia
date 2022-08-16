@@ -109,10 +109,16 @@ function openDyslexic() {
 
 // Para aumentar o tamanho da fonte
 const range = document.querySelector('.range1');
-const fontModification = document.querySelector('.fontModification');
+const fontModification1 = document.querySelector('.fontModification1');
+const fontModification2 = document.querySelector('.fontModification2');
+const fontModification3 = document.querySelector('.fontModification3');
+const fontModification4 = document.querySelector('.fontModification4');
 range.addEventListener('input', function() {
     const rangeValue = range.value;
-    fontModification.style.fontSize = rangeValue + 'px';
+    fontModification1.style.fontSize = rangeValue + 'px';
+    fontModification2.style.fontSize = rangeValue + 'px';
+    fontModification3.style.fontSize = rangeValue + 'px';
+    fontModification4.style.fontSize = rangeValue + 'px';
 })
 
 //---------------------------------------------------------

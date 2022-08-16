@@ -593,7 +593,6 @@ main {
 .fa-check.active {
     color: red;
 }
-/* rgb(1, 135, 142) */
 
 .fa-check {
     display: none;
@@ -634,7 +633,7 @@ main {
         font-size: 1rem;
 }
 
-/* Inicio do container para comprar */
+/* Final do container para comprar */
 
 .line2 {
     border-bottom: 1px solid #b6a9a9;
@@ -657,12 +656,12 @@ main {
 
 .accordion .contentBx {
     position: relative;
-    margin: 20px;
+    margin: 1.3rem;
 }
 
 .accordion .contentBx .label {
     position: relative;
-    padding: 20px;
+    padding: 1.3rem;
     background: var(--Azul);
     color: var(--Branco);
     cursor: pointer;
@@ -692,6 +691,7 @@ main {
     overflow: hidden;
     transition: 1s;
     overflow-y: auto;
+    font-size: 16px;
 }
 
 .accordion .contentBx.active .content {
@@ -704,6 +704,9 @@ main {
     margin-top: 40px;
 }
 
+.content > div {
+    font-size: 16px;
+}
 /* Final do According */
 
 /* Inicio do Footer */
