@@ -62,7 +62,6 @@ setInterval(()=>{
     }
 },5000)
 // --------------------------------------------------------
-
 /*Código para subir ao topo da página*/ 
 const toTop = document.querySelector('.subir');
 

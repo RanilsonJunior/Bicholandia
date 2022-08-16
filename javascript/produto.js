@@ -126,3 +126,15 @@ for(i = 0; i < accordion.length; i++) {
         this.classList.toggle('active')
     }) 
 }
+
+// --------------------------------------------------------
+/*Código para subir ao topo da página*/ 
+const toTop = document.querySelector('.subir');
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 100) { /*tamanho da página, quando chegar em 100 vai aparecer*/
+        toTop.classList.add('active');
+    } else {
+        toTop.classList.remove('active');
+    }
+})
