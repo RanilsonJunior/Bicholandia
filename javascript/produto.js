@@ -118,8 +118,11 @@ let activeImages = document.getElementsByClassName('active')
 		})
 
 //----------------------------------------------------------------------- 
+// Accordion
+const accordion = document.getElementsByClassName('contentBx')
 
-function selectProduct() {
-    const option1 = document.querySelector('.fa-check.');
-    option1.classList.add('active');   
+for(i = 0; i < accordion.length; i++) {
+    accordion[i].addEventListener('click', function() {
+        this.classList.toggle('active')
+    }) 
 }

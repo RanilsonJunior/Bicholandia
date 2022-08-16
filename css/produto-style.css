@@ -407,6 +407,12 @@ input.range1 {
 
 .caminho a {
     color: rgb(1, 135, 142);
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+.caminho a:hover {
+    text-decoration: underline;
 }
 
 /* Final do caminho do produto */
@@ -556,7 +562,7 @@ main {
     padding: 0px 20px;
 }
 
-.linha {
+.line1 {
     border-bottom: 1px solid #b6a9a9;
     margin: 20px 0px;
 }
@@ -629,3 +635,63 @@ main {
 }
 
 /* Inicio do container para comprar */
+
+.line2 {
+    border-bottom: 1px solid #b6a9a9;
+    margin: 50px 80px;
+}
+
+/* Inicio do According */
+
+.accordion-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #bedfe8;
+}
+
+.accordion {
+    max-width: 800px;
+}
+
+.accordion .contentBx {
+    position: relative;
+    margin: 10px 20px;
+}
+
+.accordion .contentBx .label {
+    position: relative;
+    padding: 10px;
+    background: var(--Azul);
+    color: var(--Branco);
+    cursor: pointer;
+}
+
+.accordion .contentBx .label::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+}
+
+.accordion .contentBx.active .label::before {
+    content: '-';
+}
+
+.accordion .contentBx .content {
+    position: relative;
+    background: var(--Branco);
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+
+.accordion .contentBx.active .content {
+    padding: 10px;
+    height: 150px;
+}
+/* Final do According */
