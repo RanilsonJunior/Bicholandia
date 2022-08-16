@@ -86,7 +86,7 @@ function menu2BrinquedoFechar() {
     menu2Brinquedo.classList.remove('ativo')
 }
 
-//------------------------------------------------------------
+//------------------------------------------------------------------
 
 let thumbnails = document.getElementsByClassName('thumbnail')
 let activeImages = document.getElementsByClassName('active')
@@ -116,3 +116,10 @@ let activeImages = document.getElementsByClassName('active')
 		buttonRight.addEventListener('click', function(){
 			document.getElementById('slider').scrollLeft += 180
 		})
+
+//----------------------------------------------------------------------- 
+
+function selectProduct() {
+    const option1 = document.querySelector('.fa-check.');
+    option1.classList.add('active');   
+}

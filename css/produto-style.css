@@ -402,26 +402,38 @@ input.range1 {
 .caminho {
     margin-top: 26vh; /*  Para ficar embaixo do menu*/
     margin-left: 3vw;
+    color: #555555;
 }
 
 .caminho a {
-    color: #000;
+    color: rgb(1, 135, 142);
 }
 
 /* Final do caminho do produto */
 
+main {
+    display: flex;
+}
+
 /* Inicio do slide do produto */
 .column{
-	width: 600px;
+    margin: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 50%;
 	padding: 10px;
-    border: 1px solid red;
 }
 
 #featured{
-	max-width: 500px;
-	max-height: 600px;
+	min-width: 50%;
+	max-width: 50%;
+    min-height: 50%;
+    max-height: 50%;
 	object-fit: cover;
 	cursor: pointer;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 .thumbnail{
@@ -450,7 +462,7 @@ input.range1 {
 }
 
 #slider{
-	width: 440px;
+	width: 100%;
 	display: flex;
 	flex-wrap: nowrap;
 	overflow-x: hidden; /* Caso queira colocar um scroll em baixo das imagens. */
@@ -475,8 +487,7 @@ input.range1 {
 .container-information {
     display: flex;
     flex-direction: column;
-    margin: 20px;
-    border: 1px solid red;
+    width: 30%;
 }
 
 .name-product {
@@ -523,3 +534,98 @@ input.range1 {
     margin-left: 28px;
 }
 /* Final da informação do produto */
+
+/* Inicio do container para comprar */
+.container-buy-product {
+    margin: 1.3rem;
+    border: 1px solid #b6a9a9;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.text-option {
+    padding: 20px;
+    color: rgb(34, 34, 34);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.06rem;
+}
+
+.option-product {
+    padding: 0px 20px;
+}
+
+.linha {
+    border-bottom: 1px solid #b6a9a9;
+    margin: 20px 0px;
+}
+
+.option-product .option1 {
+    color: #887c7c;
+    border: 1px solid #b6a9a9;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.option-product .option2 {
+    color: #887c7c;
+    border: 1px solid #b6a9a9;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.option-product .option3 {
+    color: #887c7c;
+    border: 1px solid #b6a9a9;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+.fa-check.active {
+    color: red;
+}
+/* rgb(1, 135, 142) */
+
+.fa-check {
+    display: none;
+}
+
+.value {
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.old-value {
+    color: rgb(119, 119, 119);
+    text-decoration: line-through;
+}
+
+.new-value {
+    color: rgb(85, 85, 85);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.cash {
+    color: rgb(119, 119, 119);
+}
+
+.btn-buy-product {
+        background-color: rgb(1, 135, 142);
+        color: var(--Branco);
+        width: 80%;
+        font-weight: 700;
+        letter-spacing: 0.06rem;
+        border-radius: 8px;
+        border: none;
+        margin: 20px;
+        height: 48px;
+        cursor: pointer;
+        font-size: 1rem;
+}
+
+/* Inicio do container para comprar */
