@@ -289,10 +289,11 @@ input.range1 {
 
 .cachorro {
     margin-left: 6px;
+
 }
 
 .cachorro .fa-angle-right {
-    padding-left: 30px;
+    padding-left: 43px;
     padding-right: 5px;
 }
 
@@ -319,7 +320,7 @@ input.range1 {
 }
 
 .gato .fa-angle-right {
-    padding-left: 59px;
+    padding-left: 65px;
     padding-right: 5px;
 }
 
@@ -346,7 +347,7 @@ input.range1 {
 }
 
 .coelho .fa-angle-right {
-    padding-left: 40px;
+    padding-left: 50px;
     padding-right: 4px;
 }
 
@@ -374,7 +375,7 @@ input.range1 {
 }
 
 .brinquedo .fa-angle-right {
-    padding-left: 12px;
+    padding-left: 25px;
 }
 
 /* Final do Menu2 */
@@ -514,6 +515,7 @@ main > h3 {
 }
 
 .slider {
+    /* width: 100%; */
     background-color: var(--bg);
     padding: 1rem;
     display: grid;
@@ -661,7 +663,7 @@ main > h3 {
     width: 100px;
     height: 100px;
     display: inline-block;
-    margin: 0 30px;
+    margin: 0 30px; /* 30 */
     transition: all .2s ease-out;
 
 }.img-logo:hover {
