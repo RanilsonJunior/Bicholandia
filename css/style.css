@@ -288,13 +288,12 @@ input.range1 {
 }
 
 .cachorro {
-    margin-left: 6px;
-
+    padding-left: 6px;
+    width: 100%;
 }
 
 .cachorro .fa-angle-right {
-    padding-left: 43px;
-    padding-right: 5px;
+    padding-left: 10px;
 }
 
 .menu2-gato {
@@ -316,12 +315,12 @@ input.range1 {
 }
 
 .gato {
-    margin-left: 6px;
+    padding-left: 6px;
+    width: 100%;
 }
 
 .gato .fa-angle-right {
-    padding-left: 65px;
-    padding-right: 5px;
+    padding-left: 10px;
 }
 
 .menu2-coelho {
@@ -343,12 +342,12 @@ input.range1 {
 }
 
 .coelho {
-    margin-left: 6px;
+    padding-left: 6px;
+    width: 100%;
 }
 
 .coelho .fa-angle-right {
-    padding-left: 50px;
-    padding-right: 4px;
+    padding-left: 10px;
 }
 
 .menu2-brinquedo {
@@ -370,12 +369,12 @@ input.range1 {
 }
 
 .brinquedo {
-    margin-left: 6px;
-    padding-right: 5px;
+    padding-left: 6px;
+    width: 100%;
 }
 
 .brinquedo .fa-angle-right {
-    padding-left: 25px;
+    padding-left: 10px;
 }
 
 /* Final do Menu2 */
