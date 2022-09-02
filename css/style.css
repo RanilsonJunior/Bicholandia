@@ -662,7 +662,6 @@ main > h3 {
     width: 100px;
     height: 100px;
     display: inline-block;
-    margin: 0 30px; /* 30 */
     transition: all .2s ease-out;
 
 }.img-logo:hover {
@@ -697,6 +696,10 @@ main > h3 {
 span {
     float: left;
     width: 50%;
+}
+.container1, .container2 {
+display: flex;
+justify-content: space-evenly;
 }
 
 @keyframes movimentacao {
